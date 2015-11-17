@@ -1,0 +1,45 @@
+---
+title: "readme"
+output: md_document
+---
+
+script variables and what's in them
+
+featurelist  =  table generated from the feature list text file
+allvarnames = a vector of strings of all feature names
+wheremeans = numeric vector of indices of means type variables
+wherestds  = numeric vector of indices of standard dev. type variables
+thedroidswerelookingfor = temporary variable, combining the above 2
+myvarnames = a subset of allvarnames, only the ones we will use
+
+
+xr = training data feature values
+yr = training data activity factor, as numeric
+xs = test data feature values
+xa = all data feature values
+ys = test data activity factor, as numeric
+ya = all data activity factors
+
+
+reducedtable = subset of all data features, only the ones we want
+actylabs = lookup table of labels for activities, from file
+subbed = actylabs subsetted into a character vector
+
+
+datastep4 = combined feature and activity data of step 4 in assignment
+
+ids = table of test data subject numbers
+idt = table of training data subject numbers
+ida = all data subject numbers
+
+d1 = temp variable, number of activities
+d2 = temp variable, number of features we want
+d3 = temp variable, number of subjects
+
+meansbyactivity = table of average feature values for each activity
+activia = temp vatiable, logical vector of rows of specific activity
+
+meansbyguys = table of average feature values by subject
+guy = temp variable, logical vector of rows of specific subject
+
+table5 = combination of meansby activity and subject
